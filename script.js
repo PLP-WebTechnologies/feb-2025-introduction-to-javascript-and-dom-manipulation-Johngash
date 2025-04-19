@@ -34,11 +34,9 @@ mode.style.padding = '1vh'
 mode.style.borderRadius = '2.8vh'
 
 function switchMode(){
-    // moon.style.display == 'none'? moon.style.display = 'inline' : moon.style.display = 'none'
-    // sun.style.display == 'none'? sun.style.display = 'inline' : sun.style.display = 'none'
-body.style.backgroundColor === 'white' 
-  ? (body.style.backgroundColor = 'black', moon.style.opacity = '1', sun.style.opacity = '0', body.style.color = 'white') 
-  : (body.style.backgroundColor = 'white', moon.style.opacity = '0', sun.style.opacity = '1', body.style.color = 'black');
+    body.style.backgroundColor === 'white' 
+    ? (body.style.backgroundColor = 'black', moon.style.opacity = '1', sun.style.opacity = '0', body.style.color = 'white', paragraph.innerText = 'You are currently in dark mode click the button to switch to light mode') 
+    : (body.style.backgroundColor = 'white', moon.style.opacity = '0', sun.style.opacity = '1', body.style.color = 'black', paragraph.innerText = 'You are currently in light mode click the button to switch to dark mode');
 ;
 }
 
